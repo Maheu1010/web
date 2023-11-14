@@ -1,0 +1,20 @@
+{
+    "account": [
+        {
+            "id": 1,
+            "type": "admin",
+            "username": "admin",
+            "email": "admin@admin.web",
+            "phone": "0951273927",
+            "password": "admin"
+        },
+        {
+            "id": 2,
+            "type": "quanly",
+            "username": "thewebql1",
+            "email": "thewebql1@admin.web",
+            "phone": "0621547362",
+            "password": "123"
+        }
+    ]
+}

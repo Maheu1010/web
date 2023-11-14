@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="/css/logform.css">
+    <link rel="stylesheet" href="/css/log_form.css">
 </head>
 <body>
     <div class="log">
-       <form action="" class="cen">
-        <h1 id="form_heading"><b>Đăng nhập</b></h1>
-        <div class="row">
-            <label>
-                Tên đăng nhập:
-            </label>
-            <label class="in">
-                <input type="text" class="in1" id="name">
-            </label>
-        </div>
-        <div class="row">
-            <label>
-                Mật khẩu:
-            </label>
-            <label class="in">
-                <input type="password" class="in1" id="pass">
-            </label>
-        </div>
-        <div class="row">
-            <input type="submit" value="Đăng nhập" class="sub">
-            <input type="reset" value="Trở lại" class="res">
-        </div>
-       </form>
+       <div class="cen">
+            <h1 id="form_heading"><b>Đăng nhập</b></h1>
+                <div class="row">
+                    <label>
+                        Tên đăng nhập:
+                    </label>
+                    <label class="in">
+                        <input type="text" class="in1" id="name">
+                    </label>
+                </div>
+                <div class="row">
+                    <label>
+                        Mật khẩu:
+                    </label>
+                    <label class="in">
+                        <input type="password" class="in1" id="pass">
+                    </label>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Đăng nhập" class="sub">
+                    <input type="reset" value="Trở lại" onclick="back()" class="res">
+                </div>
+       </div>
     </div>
     <script src="/js/login.js"></script>
 </body>

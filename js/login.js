@@ -1,1 +1,4 @@
-document.getElementById("name").focus();
+
+function back() {
+    location.assign("/index.html")
+}
