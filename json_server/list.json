@@ -1,20 +1,85 @@
 {
-    "account": [
-        {
-            "id": 1,
-            "type": "admin",
-            "username": "admin",
-            "email": "admin@admin.web",
-            "phone": "0951273927",
-            "password": "admin"
-        },
-        {
-            "id": 2,
-            "type": "quanly",
-            "username": "thewebql1",
-            "email": "thewebql1@admin.web",
-            "phone": "0621547362",
-            "password": "123"
-        }
-    ]
+  "list_adress": [
+    {
+      "adress": "132/4-Nam từ Liêm-Hà Nội"
+    }
+  ],
+  "list_account": [
+    {
+      "id": 1,
+      "type": "admin",
+      "username": "admin",
+      "email": "admin@admin.web",
+      "phone": "0951273927",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "type": "tst_manager",
+      "username": "thewebql1",
+      "email": "thewebql1@admin.web",
+      "adress": "132/4-Nam từ Liêm-Hà Nội",
+      "phone": "0621547362",
+      "password": "123"
+    },
+    {
+      "id": 3,
+      "type": "asb_manager",
+      "username": "thewebql2",
+      "email": "thewebql2@admin.web",
+      "adress": "132/4-Nam từ Liêm-Hà Nội",
+      "phone": "0621547361",
+      "password": "123"
+    },
+    {
+      "id": 4,
+      "type": "tst_staff",
+      "username": "nv1",
+      "email": "nv1@admin.web",
+      "adress": "132/4-Nam từ Liêm-Hà Nội",
+      "phone": "0951271421",
+      "password": "2541"
+    },
+    {
+      "id": 5,
+      "type": "asb_staff",
+      "username": "nv2",
+      "email": "nv2@admin.web",
+      "adress": "132/4-Nam từ Liêm-Hà Nội",
+      "phone": "0621514587",
+      "password": "142"
+    },
+    {
+      "id": 6,
+      "type": "user",
+      "username": "admoy",
+      "email": "user1@admin.web",
+      "phone": "06215145811",
+      "password": "1452"
+    },
+    {
+      "type": "user",
+      "username": "user1",
+      "email": "user@gam.bv",
+      "phone": "0123456",
+      "password": "0123",
+      "id": 7
+    },
+    {
+      "type": "user",
+      "username": "user1",
+      "email": "mach@had.da",
+      "phone": "0123456",
+      "password": "dd",
+      "id": 8
+    },
+    {
+      "type": "user",
+      "username": "user1",
+      "email": "21021657@vnu.edu.vn",
+      "phone": "0962841912",
+      "password": "MA",
+      "id": 9
+    }
+  ]
 }

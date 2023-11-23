@@ -45,6 +45,18 @@ html {
     height: 30px;
     font-size: 20px;
 }
+.error {
+    font-size: 17px;
+    color: rgb(236, 72, 72);
+    position: relative;
+    left: 250px;
+}
+.er_check {
+    font-size: 20px;
+    color: rgb(173, 39, 39);
+    position: relative;
+    left: 150px;
+}
 .sub:hover {
     background-color: aqua;
     color: blueviolet;

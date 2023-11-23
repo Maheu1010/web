@@ -1,5 +1,5 @@
 function go_log() {
-    location.assign("html/login.html")
+    window.location.href = "./html/login.html";
 }
 
 function go_create() {

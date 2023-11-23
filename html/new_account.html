@@ -17,8 +17,8 @@
                 <label class="in">
                     <input type="text" class="in1" id="name">
                 </label>
-                <span id="er_name"></span>
             </div>
+            <span id="er_name" class="error"></span>
             <div class="row">
                 <label>
                     Email:
@@ -26,8 +26,8 @@
                 <label class="in">
                     <input type="text" class="in1" id="email">
                 </label>
-                <span id="er_mail"></span>
             </div>
+            <span id="er_mail" class="error"></span>
             <div class="row">
                 <label>
                     Số điện thoại:
@@ -35,8 +35,8 @@
                 <label class="in">
                     <input type="text" class="in1" id="phone">
                 </label>
-                <span id="er_phone"></span>
             </div>
+            <span id="er_phone" class="error"></span>
             <div class="row">
                 <label>
                     Mật khẩu:
@@ -44,8 +44,8 @@
                 <label class="in">
                     <input type="password" class="in1" id="pass">
                 </label>
-                <span id="er_pass"></span>
             </div>
+            <span id="er_pass" class="error"></span>
             <div class="row">
                 <label>
                     Xác nhận mật khẩu:
@@ -53,10 +53,11 @@
                 <label class="in">
                     <input type="password" class="in1" id="re_pass">
                 </label>
-                <span id="er_re_pass"></span>
             </div>
+            <span id="er_re_pass" class="error"></span>
+            <span id="er_check_pass" class="er_check"></span>
             <div class="row">
-                <input type="submit" value="Đăng nhập" class="sub">
+                <input type="submit" value="Đăng ký" onclick="signup()" class="sub">
                 <input type="reset" value="Trở lại" onclick="back()" class="res">
             </div>
         </div>
