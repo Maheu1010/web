@@ -17,8 +17,8 @@ function login() {
     if(document.getElementById("pass").value == "") {
         document.getElementById("erpass").innerHTML = "vui lòng nhập mật khẩu"
     }
-    if(!getAccount(hanldeLogin) && document.getElementById("name").value != "" && document.getElementById("pass").value != "") {
-        document.getElementById("erall").innerHTML = "Tên tài khoản hoặc Mật khẩu không chính xác"
+    if(document.getElementById("pass").value != "" && document.getElementById("name").value != "") {
+        getAccount(hanldeLogin)
     }
 }
 
@@ -33,27 +33,34 @@ function getAccount(callback) {
 function hanldeLogin(data) {
     var username = document.getElementById("name").value;
     var pass = document.getElementById("pass").value;
+    var check = 0;
     data.forEach((data) => {
-        if(username == data.username && pass == data.password && data.type == "admin") {
+        if(username == data.user_name && pass == data.password && data.type == "admin") {
             window.location.href = "/html/admin_pro.html";
+            check = 1;
         }
-        if(username == data.username && pass == data.password && data.type == "tst_manager") {
+        else if(username == data.user_name && pass == data.password && data.type == "tst_manager") {
             window.location.href = "/html/transaction_manager.html"
+            check = 1;
         }
-        if(username == data.username && pass == data.password && data.type == "asb_manager") {
+        else if(username == data.user_name && pass == data.password && data.type == "asb_manager") {
             window.location.href = "/html/assembled_manager.html"
+            check = 1;
         }
-        if(username == data.username && pass == data.password && data.type == "tst_staff") {
+        else if(username == data.user_name && pass == data.password && data.type == "tst_staff") {
             window.location.href = "/html/transaction_staff.html"
+            check = 1;
         }
-        if(username == data.username && pass == data.password && data.type == "asb_staff") {
+        else if(username == data.user_name && pass == data.password && data.type == "asb_staff") {
             window.location.href = "/html/assembled_staff.html"
+            check = 1;
         }
-        if(username == data.username && pass == data.password && data.type == "user") {
+        else if(username == data.user_name && pass == data.password && data.type == "user") {
             window.location.href = "/html/main_display_user.html"
-        }
-        else {
-            return false;
+            check = 1;
         }
     });
+    if(check != 1) {
+        document.getElementById("erall").innerHTML = "Tên tài khoản hoặc Mật khẩu không chính xác"
+    }
 }

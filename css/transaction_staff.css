@@ -1,0 +1,28 @@
+body{
+    position: relative;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+.inp{
+    width: 175px;
+    height: 19px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.backin {
+    right: 2px;
+    position: absolute;
+}
+
+.input_oder {
+    position: absolute;
+    top: 0px;
+    background-color: aqua;
+    display: none;
+}
+

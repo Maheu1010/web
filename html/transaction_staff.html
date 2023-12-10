@@ -4,8 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/transaction_staff.css">
 </head>
 <body>
     <h1>đây là nhân viên giao dịch</h1>
+    <input type="button" value="đơn hàng mới" onclick="newOder()" id="new_oder">
+    <div class="input_oder" id="input_oder">
+        <div class="form">
+            <button class="backin" onclick="backIn()">X</button>
+            <br>
+            <label class="til"><b class="til1"><u>1.</u> họ và tên người gửi</b></label>
+            <input type="text" id="name_s" >
+            <br>
+            <label>địa chỉ</label>
+            <input type="text" id="address_s">
+            <br>
+            <label> số điện thoại</label>
+            <input type="text" id="phone_s">
+            <br>
+            <label>mã khách hàng</label>
+            <input type="text" id="id_user_s">
+            <label>mã bưu chính</label>
+            <input type="text" id="zipcode_s">
+        </div>
+        <div>
+            <label>họ và tên người nhận</label>
+            <input type="text" id="name_r">
+            <br>
+            <p>địa chỉ</p>
+            <input type="text" id="address_r">
+            <br>
+            <p> số điện thoại</p>
+            <input type="text" id="phone_r">
+            <br>
+            <p>mã bưu chính</p>
+            <input type="text" id="zipcode_r">
+        </div>
+        <div>
+            <p>
+                loại hàng gửi
+            </p>
+            <input type="radio" id="type" name="type" value="Tài liệu">tài liệu
+            <input type="radio" id="type" name="type" value="Hàng hoá">hàng hoá
+        </div>
+        <div>
+            <p>nội dung đơn hàng</p>
+            <table>
+                <thead>
+                    <th>
+                        nội dung
+                    </th>
+                    <th>
+                        số lượng
+                    </th>
+                    <th>
+                        trị giá
+                    </th>
+                    <th>
+                        giấy tờ đính kèm
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="nd1" class="inp"></td>
+                        <td><input type="number" id="sl1" class="inp"></td>
+                        <td><input type="text" id="valueable1" class="inp"></td>
+                        <td><input type="text" id="document1" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd2" class="inp"></td>
+                        <td><input type="number" id="sl2" class="inp"></td>
+                        <td><input type="text" id="valueable2" class="inp"></td>
+                        <td><input type="text" id="document2" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd3" class="inp"></td>
+                        <td><input type="number" id="sl3" class="inp"></td>
+                        <td><input type="text" id="valueable3" class="inp"></td>
+                        <td><input type="text" id="document3" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd4" class="inp"></td>
+                        <td><input type="number" id="sl4" class="inp"></td>
+                        <td><input type="text" id="valueable4" class="inp"></td>
+                        <td><input type="text" id="document4" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd5" class="inp"></td>
+                        <td><input type="number" id="sl5" class="inp"></td>
+                        <td><input type="text" id="valueable5" class="inp"></td>
+                        <td><input type="text" id="document5" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd6" class="inp"></td>
+                        <td><input type="number" id="sl6" class="inp"></td>
+                        <td><input type="text" id="valueable6" class="inp"></td>
+                        <td><input type="text" id="document6" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd7" class="inp"></td>
+                        <td><input type="number" id="sl7" class="inp"></td>
+                        <td><input type="text" id="valueable7" class="inp"></td>
+                        <td><input type="text" id="document7" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd8" class="inp"></td>
+                        <td><input type="number" id="sl8" class="inp"></td>
+                        <td><input type="text" id="valueable8" class="inp"></td>
+                        <td><input type="text" id="document8" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="nd9" class="inp"></td>
+                        <td><input type="number" id="sl9" class="inp"></td>
+                        <td><input type="text" id="valueable9" class="inp"></td>
+                        <td><input type="text" id="document9" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <td>Tổng</td>
+                        <td id="sumsl"></td>
+                        <td id="sumval"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <label>Ghi chú</label>
+            <input type="text" id="note">
+            <br>
+            <label>Chỉ dẫn</label>
+            <input type="radio" name="check" id="check1"> Chuyển hoàn ngay
+            <input type="radio" name="check" id="check2"> Gọi điện cho người gửi
+            <br>
+            <input type="radio" name="check" id="check3"> Chuyển hoàn trước ngày
+            <input type="radio" name="check" id="check4"> Chuyển hoàn khi hết thời gian lưu trữ
+            <br>
+            <input type="radio" name="check" id="check5"> Huỷ
+            <br>
+            <label>Khối lượng</label>
+            <input type="text" id="mass">
+            <br>
+            <label>COD</label>
+            <input type="text" id="COD">
+        </div>
+        <br>
+        <input type="button" id="search" value="Tạo đơn">
+    </div>
+    <script src="/js/transaction_staff.js"></script>
 </body>
 </html>

@@ -1,85 +1,129 @@
 {
-  "list_adress": [
+  "list_Work_unit": [
     {
-      "adress": "132/4-Nam từ Liêm-Hà Nội"
+      "id": 1,
+      "id_work_unit": "mhad154",
+      "adress": "132/4-Nam từ Liêm-Hà Nội",
+      "zip_code": ""
+    }
+  ],
+  "oder": [
+    {
+      "id": 1,
+      "oder_id": "mhat2",
+      "sender": {
+        "id_user": "azdp1",
+        "name": "nguyen van A",
+        "phone_number": "069512347124",
+        "address_info": {
+          "address": "132/4-Nam từ Liêm-Hà Nội",
+          "zipcode": "123478"
+        }
+      },
+      "receiver": {
+        "name": "nguyen van V",
+        "phone_number": "0123457678",
+        "address_info": {
+          "address": "156/18-Nam từ Liêm-Hà Nội",
+          "zipcode": "124864"
+        }
+      },
+      "oder_info": {
+        "name_oder": "",
+        "list_address": [
+          "",
+          ""
+        ],
+        "status": ""
+      },
+      "content": {
+        "number_1": {
+          "info": "",
+          "quantity": 1,
+          "unit_price": "",
+          "documents_enclose": ""
+        },
+        "number_2": {
+          "info": "",
+          "quantity": 1,
+          "unit_price": "",
+          "documents_enclose": ""
+        }
+      },
+      "liss_staff": [
+        "",
+        ""
+      ],
+      "sending_time": "",
+      "completion_time": "",
+      "type": "",
+      "mass": "",
+      "note": "",
+      "instruction": "",
+      "rates": {
+        "main_charge": "",
+        "surcharge": "",
+        "VAT": "",
+        "other_fees": "",
+        "total": ""
+      },
+      "COD_info": {
+        "COD": "",
+        "other_fees": "",
+        "total": ""
+      }
     }
   ],
   "list_account": [
     {
       "id": 1,
       "type": "admin",
-      "username": "admin",
+      "user_name": "admin",
       "email": "admin@admin.web",
-      "phone": "0951273927",
+      "phone_number": "0951273927",
       "password": "admin"
     },
     {
       "id": 2,
       "type": "tst_manager",
-      "username": "thewebql1",
+      "id_staff": "tst231",
+      "full_name": "nguyen thanh A",
+      "user_name": "thewebql1",
       "email": "thewebql1@admin.web",
       "adress": "132/4-Nam từ Liêm-Hà Nội",
-      "phone": "0621547362",
-      "password": "123"
+      "phone_number": "0621547362",
+      "password": "123",
+      "id_work_unit": ""
     },
     {
       "id": 3,
-      "type": "asb_manager",
-      "username": "thewebql2",
-      "email": "thewebql2@admin.web",
+      "type": "tst_staff",
+      "id_staff": "tst442",
+      "full_name": "nguyen thanh C",
+      "user_name": "thestaff2",
+      "email": "thewebql3@admin.web",
       "adress": "132/4-Nam từ Liêm-Hà Nội",
-      "phone": "0621547361",
-      "password": "123"
+      "phone_number": "0621547452",
+      "password": "123",
+      "id_work_unit": ""
     },
     {
       "id": 4,
-      "type": "tst_staff",
-      "username": "nv1",
-      "email": "nv1@admin.web",
-      "adress": "132/4-Nam từ Liêm-Hà Nội",
-      "phone": "0951271421",
-      "password": "2541"
-    },
-    {
-      "id": 5,
-      "type": "asb_staff",
-      "username": "nv2",
-      "email": "nv2@admin.web",
-      "adress": "132/4-Nam từ Liêm-Hà Nội",
-      "phone": "0621514587",
-      "password": "142"
-    },
-    {
-      "id": 6,
+      "id_user": "MHWA14",
       "type": "user",
-      "username": "admoy",
-      "email": "user1@admin.web",
-      "phone": "06215145811",
-      "password": "1452"
+      "user_name": "user1",
+      "email": "thewebql45@admin.web",
+      "phone_number": "09512739271",
+      "password": "145"
     },
     {
+      "id_user": "YZMU2106",
       "type": "user",
-      "username": "user1",
-      "email": "user@gam.bv",
-      "phone": "0123456",
-      "password": "0123",
-      "id": 7
-    },
-    {
-      "type": "user",
-      "username": "user1",
-      "email": "mach@had.da",
-      "phone": "0123456",
-      "password": "dd",
-      "id": 8
-    },
-    {
-      "type": "user",
-      "username": "user1",
+      "user_name": "MHI3",
       "email": "21021657@vnu.edu.vn",
-      "phone": "0962841912",
-      "password": "MA",
-      "id": 9
+      "phone_number": "0962841912",
+      "password": "11",
+      "id": 5
     }
   ]
 }
